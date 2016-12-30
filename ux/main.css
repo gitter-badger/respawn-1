@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Summit';
+  src: url('SummitBold-Display.ttf') format('truetype');
+}
+
+.page-title {
+  font-family: "Summit" !important;
+  font-size: 120%;
+}
+
+.theme-font {
+  font-family: "Summit";
+}
+
+.transparent {
+  background-color: rgba(0,209,178,0.3);
+  border-color: rgba(0,209,178,0.1);
+}
+
+.guide {
+  line-height: 200%;
+  font-size: 110%;
+  vertical-align: middle;
+}

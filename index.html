@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+    ___
+    | _ \___ ____ __  __ ___ __ ___ _
+    |   / -_|_-< '_ \/ _` \ V  V / ' \
+    |_|_\___/__/ .__/\__,_|\_/\_/|_||_|
+            |_|
+    by Mingjie
+-->
+<html>
+
+<head>
+    <link rel="stylesheet" href="core/bulma.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="ux/main.css">
+
+    <meta charset="utf-8">
+    <title>R·E·S·P·A·W·N</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-left">
+            <a class="nav-item is-brand" href="#">
+                <img src="media/respawn.png">
+                <span class="page-title">&nbsp;RESPAWN</span>
+            </a>
+        </div>
+
+        <div class="nav-center">
+            <a class="nav-item" href="https://github.com/mj66/respawn">
+                <span class="icon">
+          <i class="fa fa-github"></i>
+        </span>
+            </a>
+        </div>
+
+        <span class="nav-toggle">
+      <span></span>
+        <span></span>
+        <span></span>
+        </span>
+
+        <div class="nav-right nav-menu">
+            <a class="nav-item" href="#">
+        Home
+      </a>
+            <a class="nav-item" href="wiki/index.html">
+  Guide
+</a>
+        </div>
+    </nav>
+
+    <section class="hero is-warning is-fullheight is-bold ready" style="text-align:center;">
+        <div class="hero-body">
+            <div class="container">
+                <img src="media/respawn.png" width="160">
+                <h1 class="title theme-font">
+        Start Playing Now
+      </h1>
+                <a id="startGame" class="button is-large theme-font transparent"><i class="fa fa-play"></i>&nbsp;SPAWN</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero is-dark is-fullheight is-bold frame1" style="text-align:center;display:none;">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title theme-font">
+                <span id="tutor-1">Tutourial</span>
+                <span id="tutor-2">You've learnt JavaScript, right?</span>
+                <span id="tutor-3">Now you're using it.</span>
+                <span id="tutor-4">Control yourself in the game using the command zone provided.</span>
+                <span id="tutor-5">Remember that all actions have to be typed in.</span>
+                <span id="tutor-6">There are also shortcut buttons provided.</span>
+                <span id="tutor-7">But overall, it is self-explanatory.</span>
+                <span id="tutor-8">What do you do in the game?</span>
+                <span id="tutor-9">STAY ALIVE.</span><br>
+                <span id="start-button" style="color:black;display:none;"><a class="button is-bold is-warning is-large">Start Game</a></span>
+              </h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero is-primary is-fullheight is-bold frame2" style="text-align:center;display:none;">
+        <div class="hero-body">
+            <div class="container">
+                <h3 class="title theme-font">
+                Open Console to play. There's no GUI in the game.
+              </h3>
+              <h3 class="title theme-font">Location: <span id="x-loc">0</span>, <span id="y-loc">0</span>, <span id="z-loc">0</span></h3>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>
+                    <strong class="theme-font">Respawn</strong> by <a href="https://secured.mingjie.info">Mingjie Jiang</a>. The source code is licensed
+                    <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
+                </p>
+                <p>
+                    <a class="icon" href="https://github.com/mj66/respawn">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Include -->
+    <script src="core/handlebars.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="app/define.js"></script>
+    <script src="app/game_script.js"></script>
+</body>
+
+</html>

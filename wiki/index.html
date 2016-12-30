@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+    ___
+    | _ \___ ____ __  __ ___ __ ___ _
+    |   / -_|_-< '_ \/ _` \ V  V / ' \
+    |_|_\___/__/ .__/\__,_|\_/\_/|_||_|
+            |_|
+    by Mingjie
+-->
+<html>
+
+<head>
+    <link rel="stylesheet" href="../core/bulma.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../ux/main.css">
+
+    <meta charset="utf-8">
+    <title>R·E·S·P·A·W·N</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-left">
+            <a class="nav-item is-brand" href="#">
+                <img src="../media/respawn.png">
+                <span class="page-title">&nbsp;RESPAWN</span>
+            </a>
+        </div>
+
+        <div class="nav-center">
+            <a class="nav-item" href="https://github.com/mj66/respawn">
+                <span class="icon">
+          <i class="fa fa-github"></i>
+        </span>
+            </a>
+        </div>
+
+        <span class="nav-toggle">
+      <span></span>
+        <span></span>
+        <span></span>
+        </span>
+
+        <div class="nav-right nav-menu">
+            <a class="nav-item" href="#">
+        Home
+      </a>
+        </div>
+    </nav>
+
+    <section class="hero is-warning is-medium is-bold ready">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title theme-font">
+        Survival Guide
+      </h1>
+                <p class="subtitle theme-font">
+                    There's always a way to go.
+                </p>
+            </div>
+        </div>
+    </section>
+    <br>
+    <div class="columns" style="margin-left:2%;margin-right:2%;">
+        <div class="column is-one-quarter">
+            <nav class="panel">
+                <p class="panel-heading">
+                    Menu Tree
+                </p>
+
+                <a class="panel-block" href="#quick-start"><span class="panel-icon"><i class="fa fa-book"></i></span><b>Quick Start</b></a>
+                <a class="panel-block" href="#basic-commands"><span class="panel-icon"><i class="fa fa-book"></i></span><b>Basic Commands</b></a>
+                <a class="panel-block" href="#move"><span class="panel-icon"><i class="fa fa-arrows"></i></span>move</a>
+                <a class="panel-block" href="#advanced-commands"><span class="panel-icon"><i class="fa fa-book"></i></span>Advanced Commands</a>
+            </nav>
+        </div>
+        <div class="column guide">
+            <h2 class="title theme-font" id="quick-start">Quick Start</h2>
+            <hr>
+            <p>So this guide will tell you what to do in the game, how to make the game fun, and tells you about all the commands. When coding this game, I used this to gather ideas. Hope this will help you, too!</p>
+            <p><b>This is a game for you if you...</b></p>
+            <li>Know a lot about JavaScript</li>
+            <li>Likes playing Minecraft</li>
+            <br><br>
+            <h2 class="title theme-font" id="basic-commands">Basic Commands</h2>
+            <hr>
+
+            <script id="document-template" type="text/x-handlebars-template">
+                {{#each command}}
+                <p id="{{name}}"><b>{{name}}</b></p>
+                <p>{{description}}</p>
+                <p><span class="tag is-primary">Factors</span>&nbsp;{{factors}}</p>
+                <p><span class="tag is-dark">Command</span>&nbsp;<code>{{code-sample}}</code></p>
+                <br>
+                {{/each}}
+            </script>
+
+            <div class="content-placeholder"></div>
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>
+                    <strong class="theme-font">Respawn</strong> by <a href="https://secured.mingjie.info">Mingjie Jiang</a>. The source code is licensed
+                    <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
+                </p>
+                <p>
+                    <a class="icon" href="https://github.com/mj66/respawn">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Include -->
+    <script src="../core/handlebars.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="../app/define.js"></script>
+    <script src="../app/wiki.js"></script>
+</body>
+
+</html>
