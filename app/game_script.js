@@ -146,6 +146,7 @@ function teleport(cordX, cordY, cordZ) {
         console.log('You can not move out of the (' + boundX + ', ' + boundY + ', ' + boundZ + ') boundary.', 'purple');
         return (stat1);
     }
+		update();
     return (stat0);
 }
 
