@@ -10,6 +10,8 @@
 <html>
 
 <head>
+    <link rel="shortcut icon" href="../media/respawn.png" type="image/png">
+
     <link rel="stylesheet" href="../core/bulma.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
@@ -22,17 +24,29 @@
 <body>
     <nav class="nav">
         <div class="nav-left">
-            <a class="nav-item is-brand" href="#">
+            <a class="nav-item is-brand" href="/">
                 <img src="../media/respawn.png">
                 <span class="page-title">&nbsp;RESPAWN</span>
             </a>
         </div>
 
         <div class="nav-center">
-            <a class="nav-item" href="https://github.com/mj66/respawn">
+            <a class="nav-item" href="https://gitter.im/spawn-ga/Lobby" title="Gitter Chatroom">
+                <span class="icon">
+          <i class="fa fa-comments-o"></i>
+          </span>
+            </a>
+
+            <a class="nav-item" href="https://github.com/mj66/respawn" title="Github Repository">
                 <span class="icon">
           <i class="fa fa-github"></i>
         </span>
+            </a>
+
+            <a class="nav-item" href="https://tree.taiga.io/project/mj66-respawnga/" title="Taiga Project Manangement">
+                <span class="icon">
+            <i class="fa fa-check-square-o"></i>
+            </span>
             </a>
         </div>
 
@@ -43,9 +57,15 @@
         </span>
 
         <div class="nav-right nav-menu">
-            <a class="nav-item" href="#">
-        Home
-      </a>
+            <a class="nav-item" href="/">
+      Home
+    </a>
+            <a class="nav-item" href="/wiki">
+Guide
+</a>
+            <a class="nav-item" href="/developers">
+For Developers
+</a>
         </div>
     </nav>
 
@@ -92,8 +112,7 @@
                 <p>{{description}}</p>
                 <p><span class="tag is-primary">Factors</span>&nbsp;{{factors}}</p>
                 <p><span class="tag is-dark">Command</span>&nbsp;<code>{{code-sample}}</code></p>
-                <br>
-                {{/each}}
+                <br> {{/each}}
             </script>
 
             <div class="content-placeholder"></div>
