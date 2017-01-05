@@ -4,6 +4,18 @@ var trigger2 = document.getElementById("start-button");
 trigger2.addEventListener("click", startGame);
 var i = 0;
 
+var build = {};
+//Generate Block ID
+function genCharArray(charA, charZ) {
+    var a = [], i = charA.charCodeAt(0), j = charZ.charCodeAt(0);
+    for (; i <= j; ++i) {
+        a.push(String.fromCharCode(i));
+    }
+    return a;
+}
+var blockSn = genCharArray('a', 'z');
+var blockId = 0;
+
 //Initialize Boundaries
 var boundX = 1024;
 var boundY = 1024;
@@ -153,4 +165,12 @@ function teleport(cordX, cordY, cordZ) {
 function location() {
     console.log('Current location: (' + locX + ', ' + locY + ', ' + locZ + ').','green');
 		return (stat0);
+}
+
+function build() {
+    
+}
+
+function list() {
+
 }

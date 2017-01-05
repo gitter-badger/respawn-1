@@ -10,29 +10,43 @@
 <html>
 
 <head>
+    <link rel="shortcut icon" href="media/respawn.png" type="image/png">
+
     <link rel="stylesheet" href="core/bulma.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="ux/main.css">
 
     <meta charset="utf-8">
-    <title>R·E·S·P·A·W·N</title>
+    <title>The Respawn Game</title>
 </head>
 
 <body>
     <nav class="nav">
         <div class="nav-left">
-            <a class="nav-item is-brand" href="#">
+            <a id="title-link" class="nav-item is-brand" href="/">
                 <img src="media/respawn.png">
                 <span class="page-title">&nbsp;RESPAWN</span>
             </a>
         </div>
 
         <div class="nav-center">
-            <a class="nav-item" href="https://github.com/mj66/respawn">
+            <a class="nav-item" href="https://gitter.im/spawn-ga/Lobby" title="Gitter Chatroom">
+                <span class="icon">
+          <i class="fa fa-comments-o"></i>
+          </span>
+            </a>
+
+            <a class="nav-item" href="https://github.com/mj66/respawn" title="Github Repository">
                 <span class="icon">
           <i class="fa fa-github"></i>
         </span>
+            </a>
+
+            <a class="nav-item" href="https://tree.taiga.io/project/mj66-respawnga/" title="Taiga Project Manangement">
+                <span class="icon">
+            <i class="fa fa-check-square-o"></i>
+            </span>
             </a>
         </div>
 
@@ -43,11 +57,14 @@
         </span>
 
         <div class="nav-right nav-menu">
-            <a class="nav-item" href="#">
+            <a class="nav-item" href="/#">
         Home
       </a>
-            <a class="nav-item" href="wiki/index.html">
+            <a class="nav-item" href="/wiki">
   Guide
+</a>
+            <a class="nav-item" href="/developers">
+For Developers
 </a>
         </div>
     </nav>
@@ -59,6 +76,7 @@
                 <h1 class="title theme-font">
         Start Playing Now
       </h1>
+                <p>Warning: Only optimized for Google Chrome. Other browsers are not currently guranteed working.</p>
                 <a id="startGame" class="button is-large theme-font transparent"><i class="fa fa-play"></i>&nbsp;SPAWN</a>
             </div>
         </div>
@@ -89,7 +107,7 @@
                 <h3 class="title theme-font">
                 Open Console to play. There's no GUI in the game.
               </h3>
-              <h3 class="title theme-font">Location: <span id="x-loc">0</span>, <span id="y-loc">0</span>, <span id="z-loc">0</span></h3>
+                <h3 class="title theme-font">Location: <span id="x-loc">0</span>, <span id="y-loc">0</span>, <span id="z-loc">0</span></h3>
             </div>
         </div>
     </section>
